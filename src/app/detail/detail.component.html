@@ -1,10 +1,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<div class="main">
-    <div class="btnNav" *ngFor="let item of mysongs; let i = index" (click)="onClickMe(i)">
+
+<div class="main" *ngFor="let item of mysongs; let i = index">
+    <div class="btnNav" (click)="onClickMe(i)">
         <button class="btn">{{ item.songname }}</button>
     </div>
 
-    <div *ngIf='goodToShow[i]' class='songinfo'>
+    <div class='songinfo' *ngIf='goodToShow[i]'>
         <div class='img'><img src="{{item.picture}}"></div>
         <div class='data'>
             <strong>Song Name:</strong> {{ item.songname }}<br />
@@ -14,3 +15,5 @@
         </div>
     </div>
 </div>
+
+<br/><br/>

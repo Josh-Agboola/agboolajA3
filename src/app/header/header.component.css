@@ -1,0 +1,8 @@
+p {
+    background-color: #fffaf0;
+    text-align: center;
+    font-weight: bold;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+}
