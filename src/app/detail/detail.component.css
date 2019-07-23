@@ -1,0 +1,32 @@
+.songinfo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5px;
+    background: bisque;
+}
+
+.btnNav .btn {
+    background-color: lightskyblue;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid grey;
+    width: 25%;
+    height: 60px;
+}
+
+.btnNav .btn:hover {
+    background-color: indianred;
+}
+
+img {
+    height: 120px;
+    width: 110px;
+}
