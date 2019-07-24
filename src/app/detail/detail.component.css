@@ -1,18 +1,29 @@
 .main {
-    display: block;
+    display: grid;
+    grid-template-areas: 'btn' 'info';
 }
 
 .songinfo {
+    grid-area: info;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-areas: 'img data';
     padding: 5px;
     background: bisque;
     position: relative;
     bottom: 0;
 }
 
+.img {
+    grid-area: img;
+}
+
+.data {
+    grid-area: data;
+}
+
 .btnNav .btn {
     background-color: lightskyblue;
+    display: inline-block;
     border: none;
     color: white;
     padding: 10px;
